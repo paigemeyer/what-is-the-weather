@@ -1,0 +1,14 @@
+body{
+    background: radial-gradient( 1091px at 106.5% 111.5%, rgb(250, 246, 213) 0.1%, rgb(218, 147, 93) 42.2%, rgb(137, 86, 67) 74.3%, rgb(67, 39, 39) 100.2%);
+ height: 100vh;
+}
+.content{
+    background-color:#eed8bf;
+    background: rgba(240,240,240,0.3);
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: rgba(65, 50, 100, 0.08) 0px 30px 50px 0px;
+    border-radius: 15px;
+}
+
