@@ -13,19 +13,19 @@
 <body>
     <div class="content">
     <header>
-        <form>
-            <input type="text" placeholder="Enter your city..." required class="city-input"/>
+        <form id="search-input">
+            <input type="text" placeholder="Enter your city..." required class="city-input" id="new-city-input"/>
             <input type="submit" value="search" class="search-city"/>
         </form>
     </header>
 <div class="main-weather">
-        <h1> Cape Town</h1>
+        <h1 id="heading-city"> Cape Town</h1>
     
     <div>
         <p>Tuesday 16:09 </br>
         Humidity: 54%, Wind: 2.57km/h</p>
     </div>
-    <div class="temp-now"> <strong>☀️ 20</strong></div><span class="degree">°C</span>
+    <div class="temp-now"> <strong>☀️20</strong></div><span class="degree">°C</span>
 </div>
 
     <footer class="code-who">
@@ -34,5 +34,6 @@
       <a href="" target="_blank"> hosted on Netlify</a>
     </footer>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
