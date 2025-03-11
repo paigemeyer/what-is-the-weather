@@ -3,6 +3,9 @@ body{
  height: 100vh;
 font-family: "Lora", serif;
 }
+#time-date{
+    font-size:17px;
+}
 .content{
     background-color:#eed8bf;
     background: rgba(240,240,240,0.2);
@@ -35,11 +38,17 @@ a{
 .code-who{
     text-align: center;
 }
+.icon{
+    position: relative;
+    left: 370px;
+    bottom: 102px;
+    font-size: 55px;
+}
 .temp-now{
     position: relative;
-    left: 360px;
-    bottom: 80px;
-    font-size: 70px;
+    left: 450px;
+    bottom: 185px;
+    font-size: 75px;
     font-weight: 700px;
     
 
@@ -47,6 +56,6 @@ a{
 .degree{
     font-size: 25px;
     position: relative;
-    left: 530px;
-    bottom: 160px;
+    left: 535px;
+    bottom: 265px;
 }

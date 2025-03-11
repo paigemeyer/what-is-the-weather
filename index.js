@@ -5,6 +5,7 @@ let cityElement=document.querySelector("#heading-city");
 cityElement.innerHTML=SearchInput.value;
 searchCity(SearchInput.value);
 
+
 }
 let serachEngine=document.querySelector("#search-input");
 serachEngine.addEventListener("submit", searchNow);
@@ -20,5 +21,14 @@ function updateTemp(response){
 let temperature=document.querySelector("#temp");
 let tempElement=response.data.temperature.current;
 temperature.innerHTML=Math.round(tempElement);
+let descriptionE=document.querySelector("#description");
+let description=response.data.condition.description;
+descriptionE.innerHTML=(description)
+
+let humidity=document.querySelector("#humidity");
+let humidityE=response.data.temperature.humidity;
+humidity.innerHTML=(humidityE)
+
+
 }
 
