@@ -21,13 +21,18 @@ function updateTemp(response){
 let temperature=document.querySelector("#temp");
 let tempElement=response.data.temperature.current;
 temperature.innerHTML=Math.round(tempElement);
+
 let descriptionE=document.querySelector("#description");
 let description=response.data.condition.description;
 descriptionE.innerHTML=(description)
 
-let humidity=document.querySelector("#humidity");
+let humidity=document.querySelector("#Humidity");
 let humidityE=response.data.temperature.humidity;
-humidity.innerHTML=(humidityE)
+humidity.innerHTML=(humidityE);
+
+let winds=document.querySelector("#wind");
+let windElement=response.data.wind.speed;
+winds.innerHTML=(windElement);
 
 
 }

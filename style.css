@@ -41,13 +41,13 @@ a{
 .icon{
     position: relative;
     left: 370px;
-    bottom: 102px;
+    bottom: 160px;
     font-size: 55px;
 }
 .temp-now{
     position: relative;
     left: 450px;
-    bottom: 185px;
+    bottom: 250px;
     font-size: 75px;
     font-weight: 700px;
     
@@ -57,5 +57,12 @@ a{
     font-size: 25px;
     position: relative;
     left: 535px;
-    bottom: 265px;
+    bottom: 330px;
+}
+#description{
+    position: relative;
+    left: 445px;
+    bottom: 45px;
+    font-size: 25px;
+
 }
