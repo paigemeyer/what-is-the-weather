@@ -34,6 +34,17 @@ let winds=document.querySelector("#wind");
 let windElement=response.data.wind.speed;
 winds.innerHTML=(windElement);
 
+let time=document.querySelector("#time-date");
+let date= new Date(response.data.time * 1000);
+time.innerHTML= newDate(date);
 
 }
 
+function newDate(date){
+   let days=["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+   let day=days[date.getDay()];
+   let hours= date.getHours();
+   let minutes= date.getMinutes();
+
+   return`${day} ${hours}:${minutes}`
+}
