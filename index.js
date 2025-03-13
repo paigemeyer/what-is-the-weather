@@ -28,15 +28,21 @@ descriptionE.innerHTML=(description)
 
 let humidity=document.querySelector("#Humidity");
 let humidityE=response.data.temperature.humidity;
-humidity.innerHTML=(humidityE);
+humidity.innerHTML= `${humidityE} %`;
 
 let winds=document.querySelector("#wind");
 let windElement=response.data.wind.speed;
-winds.innerHTML=(windElement);
+winds.innerHTML= `${windElement} km/h`;
 
 let time=document.querySelector("#time-date");
 let date= new Date(response.data.time * 1000);
 time.innerHTML= newDate(date);
+
+
+ let iconElement=document.querySelector("#icons");
+ iconElement.innerHTML=`<img src="${response.data.condition.icon_url}"class="icon"/>`;
+
+
 
 }
 
@@ -45,6 +51,10 @@ function newDate(date){
    let day=days[date.getDay()];
    let hours= date.getHours();
    let minutes= date.getMinutes();
+
+   if(minutes <10){
+    minutes=`0${minutes}`;
+   }
 
    return`${day} ${hours}:${minutes}`
 }

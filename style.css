@@ -41,13 +41,14 @@ a{
 .icon{
     position: relative;
     left: 370px;
-    bottom: 160px;
-    font-size: 55px;
+    bottom: 153px;
+    width: 80px;
+    height: 90px;
 }
-.temp-now{
+#temp{
     position: relative;
     left: 450px;
-    bottom: 250px;
+    bottom: 265px;
     font-size: 75px;
     font-weight: bolder;
     
@@ -57,12 +58,17 @@ a{
     font-size: 25px;
     position: relative;
     left: 535px;
-    bottom: 330px;
+    bottom: 344px;
 }
 #description{
     position: relative;
-    left: 445px;
-    bottom: 45px;
-    font-size: 25px;
-
+    left: 380px;
+        bottom: 40px;
+        font-size: 25px;
+}
+#Humidity{
+    color:#eed8bf;
+}
+#wind{
+    color: #eed8bf;
 }
