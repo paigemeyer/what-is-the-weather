@@ -39,31 +39,22 @@ a{
     text-align: center;
 }
 .icon{
-    position: relative;
-    left: 370px;
-    bottom: 153px;
     width: 80px;
     height: 90px;
 }
 #temp{
-    position: relative;
-    left: 450px;
-    bottom: 265px;
     font-size: 75px;
     font-weight: bolder;
-    
-
 }
 .degree{
     font-size: 25px;
-    position: relative;
-    left: 535px;
-    bottom: 344px;
+    margin-top: 15px;
 }
 #description{
     position: relative;
     left: 380px;
-        bottom: 40px;
+    bottom: 35px;
+    margin-top: 15px;
         font-size: 25px;
 }
 #Humidity{
@@ -71,4 +62,12 @@ a{
 }
 #wind{
     color: #eed8bf;
+}
+.main-weather{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.d-flex{
+    display: flex;
 }
