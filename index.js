@@ -58,3 +58,30 @@ function newDate(date){
 
    return`${day} ${hours}:${minutes}`
 }
+
+function displayForecast(){
+   let days=["Thu", "Fri","Sat","Sun","Mon"];
+   let forecastHtml="";
+
+   days.forEach(function(day){
+      forecastHtml=
+      forecastHtml+
+      `
+    <div class="forecast-day1">
+        <div class="day-forecast">${day}</div>
+        <div class="forecast-icon">🌤️</div>
+        <div class="forecast-temp">
+
+            <div class="temperature-forecast"><strong>20°</strong></div>
+            <div class="temperature-forecast">
+                18°</div>
+        </div>
+    </div>
+      `;
+   });
+
+   let forecastElement=document.querySelector("#forecast");
+   forecastElement.innerHTML=forecastHtml;
+
+}
+displayForecast();
