@@ -81,6 +81,8 @@ a{
     background: rgba(240, 240, 240, 0.2);
     border-radius: 15px;
     max-width: 550px;
+    padding: 20px;
+    margin: 50px auto;
 
     
 }
