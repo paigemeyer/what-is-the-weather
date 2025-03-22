@@ -56,10 +56,10 @@ a{
 }
 #description{
     position: relative;
-    left: 380px;
-    bottom: 35px;
+    
+    bottom: 15px;
     margin-top: 15px;
-        font-size: 25px;
+        font-size: 20px;
 }
 #Humidity{
     color:#eed8bf;
@@ -95,8 +95,11 @@ a{
 
 }
 .forecast-icon{
-    font-size: 32px;
-    text-align: center;
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+
 }
 .forecast-temp{
     text-align: center;
